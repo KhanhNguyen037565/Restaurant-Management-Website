@@ -1,0 +1,18 @@
+﻿@using WebsiteNhaHang.Models
+@model List<LoaiMon>
+    
+
+@foreach (var item in Model)
+{
+    <div class="card ml-4 mb-4" style="width: 20rem; ">
+            
+        <div class="card-body">
+            <a class="card-text alert alert-success ml-1" href="@Url.Action("MonAnTheoLoai", new { @MaLoai=item.MaLoai})">@item.TenLoai</a>
+        </div>
+        @foreach (var monAn in item.MonAn.Take(1).ToList())
+        {
+            <img class="card-img-top ml-4 mr-3 mb-4" src="@Url.Content("~/Content/img/MonAn/"+monAn.HinhAnh)" style="max-width: 85%; min-height: 65%" alt="Card image cap">
+        }
+            
+    </div>
+}

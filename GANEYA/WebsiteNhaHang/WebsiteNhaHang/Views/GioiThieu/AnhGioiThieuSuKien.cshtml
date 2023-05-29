@@ -1,0 +1,9 @@
+﻿@using WebsiteNhaHang.Models
+@model List<KhongGianNhaHang>
+@foreach (var item in Model)
+{
+    <div class="carousel-item active">
+        <a href="#"><img class="d-block img-fluid w-100" src="~/Content/img/MonAn/KhuyenMai-Sukien/@item.HinhAnh" alt=""></a>
+    </div>
+}
+

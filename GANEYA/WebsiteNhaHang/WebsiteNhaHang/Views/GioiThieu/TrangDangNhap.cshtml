@@ -1,0 +1,9 @@
+﻿@using WebsiteNhaHang.Models
+@model List<ThongTinNhaHang>
+@foreach (var item in Model)
+{
+    <div class="card mt-2" style="width: auto;box-shadow:0 3px 5px 0  #708090">
+        <h4 class="card-header text-center text-secondary">Địa chỉ nhà hàng</h4>
+        <iframe src="@item.URLMap" min-width="500" height="320" frameborder="0" style="border: 0;"></iframe>
+    </div>
+}

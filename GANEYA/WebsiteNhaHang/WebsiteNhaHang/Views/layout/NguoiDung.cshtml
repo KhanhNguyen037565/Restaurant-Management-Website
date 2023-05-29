@@ -1,0 +1,232 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Nhà hàng GANEYA Nhật Bản">
+    <meta name="keywords" content="Những món ăn Nhật ngon nhất">
+    <meta name="author" content="Internship CongNV">
+    <link rel="shortcut icon" href="~/Content/img/favicon.ico" /> 
+    <title>@ViewBag.Title</title>
+
+    <!-- Bootstrap CSS -->
+    <script src="~/scripts/jquery-1.10.2.min.js"></script>
+    <link href="~/Content/PagedList.css" rel="stylesheet" />
+    <link href="~/Content/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link id="themecss" rel="stylesheet" type="text/css" href="//www.shieldui.com/shared/components/latest/css/light-mint/all.min.css" />
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="~/Content/css/business-casual.css" rel="stylesheet">
+
+    <style>
+        #DangXuat,#QLAdmin {
+            display: none;
+        }
+    </style>
+    @if (Session["EmailDangNhap"] != null)
+    {
+        <style>
+            #DangNhap {
+                display: none;
+            }
+            #DangXuat {
+                display: block;
+            }
+        </style>
+        if (Convert.ToInt32(Session["LoaiTk"])!=2)
+        {
+            <style>
+                #QLAdmin 
+                {
+                    display: block;
+                }
+            </style>
+        }
+    }    
+@{ 
+   
+    //var a = document.cookie;
+}
+</head>
+
+<body id="MauChu">
+
+    @*@Html.Action("ThongTinNhaHang1", "GioiThieu")*@
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4" >
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="/">Ganeya Nhật Bản</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active px-lg-3">
+                    <a class="nav-link text-uppercase text-expanded" href="/"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item px-lg-3">
+                    <a class="nav-link text-uppercase text-expanded " href="~/GioiThieu">Giới Thiệu</a>
+                </li>
+                <li class="nav-item px-lg-3">
+                    <a class="nav-link text-uppercase text-expanded" href="~/ThucDon">Thực Đơn</a>
+                </li>
+                <li class="nav-item px-lg-3">
+                    <a class="nav-link text-uppercase text-expanded" href="~/Combo">Gói Combo <span class="badge badge-secondary">@Html.Action("DemCombo","Combo")</span></a>
+
+                </li>
+
+                <li class="nav-item px-lg-3">
+                    <a class="nav-link text-uppercase text-expanded" href="~/KhuyenMaiSuKien">Khuyến Mãi - Sự Kiện <span class="badge badge-secondary">@Html.Action("DemSuKien_KhuyenMai", "KhuyenMaiSuKien")</span></a>
+                </li>
+                <li class="nav-item px-lg-3">
+                    <a class="nav-link text-uppercase text-expanded" href="~/TuyenDung">Tuyển Dụng <span class="badge badge-secondary">@Html.Action("DemTuyenDung", "TuyenDung")</span></a> @*đếm*@
+                </li>
+                <li class="nav-item px-lg-3">
+                    <div class="dropdown show">
+
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-user-circle" aria-hidden="true"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <div id="DangNhap">
+                                <a class="dropdown-item" style="font-family: 'Roboto Condensed', sans-serif" href="@Url.Action("DangNhap", "TaiKhoan")">Đăng Nhập</a>
+                                <a class="dropdown-item" style="font-family: 'Roboto Condensed', sans-serif" href="@Url.Action("DangKy", "TaiKhoan")">Đăng Ký Thành Viên</a>
+                            </div>
+                            <div id="DangXuat">
+                                <p class="dropdown-item" style="font-family: 'Roboto Condensed', sans-serif">@Session["EmailDangNhap"]</p>
+                                <a class="dropdown-item" style="font-family: 'Roboto Condensed', sans-serif" href="@Url.Action("TaiKhoanChiTiet","TaiKhoan")">Quản lý tài khoản</a>
+                                <a class="dropdown-item" id="QLAdmin" style="font-family: 'Roboto Condensed', sans-serif" href="@Url.Action("DangNhap","TaiKhoanAdmin")">Trang Admin</a>
+                                <p class="dropdown-item" style="font-family: 'Roboto Condensed', sans-serif">@Html.ActionLink("Đăng Xuất", "DangXuat", "TaiKhoan")</p>
+                            </div>
+                        </div>
+
+                       
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!--Cài đặt đa giao diện-->
+        <div style="position: fixed; top: 5%; left: 0.5%; z-index: 2" id="GioHang1" >            
+            <div class="panel panel-default" style="width:auto">
+                <div class="panel-heading ">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapse1">
+                            <b class="badge badge-light rounded-circle" style="color:black"><i class="fa fa-cog fa-1x"></i></b>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse alert alert-light">
+                    <h4>Màu chữ</h4>
+                    <button type="button" class="btnMauChu1 btn btn-dark rounded-circle" data-color="text-dark"></button>
+                    <button type="button" class="btnMauChu5 btn btn-light rounded-circle border border-dark" data-color="text-light"></button>
+                    <button type="button" class="btnMauChu2 btn btn-primary rounded-circle" data-color="text-primary"></button>
+                    <button type="button" class="btnMauChu3 btn btn-danger rounded-circle" data-color="text-danger"></button>
+                    <button type="button" class="btnMauChu4 btn btn-warning rounded-circle" data-color="text-warning"></button>
+                    <hr />
+                    <h4>Màu nền</h4>
+                    <button type="button" class="btnMauNen2 btn btn-light rounded-circle border border-dark" data-color="#FAFAFA"></button>
+                    <button type="button" class="btnMauNen1 btn btn-dark rounded-circle" data-color="#19070B"></button>                    
+                    <button type="button" class="btnMauNen3 btn btn-success rounded-circle" data-color="#A9F5D0"></button>
+                    <button type="button" class="btnMauNen4 btn btn-warning rounded-circle" data-color="#DF7401"></button>
+                </div>
+            </div>
+        </div> 
+        <div class="row">
+            <!-- Giỏ hàng -->
+            <div style="position: fixed; top: 15%; right: 0.5%; z-index: 2; " id="GioHang1">
+                <img src="~/Content/img/icon_256.png" data-toggle="modal" data-target=".bd-example-modal-lg-9-m" style="max-width: 40px; max-height: 40px" /> <span class="badge badge-secondary">@Html.Action("tongSoLuong", "DatBan")</span>
+            </div>            
+                @Html.Action("GioHang", "DatBan")
+        </div>
+
+
+        <div class="bg-faded p-4 my-4" id="nivoSlider">
+            <!-- Image Carousel -->
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div style="max-height:32rem; height: auto">
+                            <img class="d-block img-fluid w-100" src="~/Content/img/slide-1.jpg" style="height: 80%" alt="">
+                        </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3 class="text-shadow">First Slide</h3>
+                                <p>This is the caption for the first slide.</p>
+                            </div>
+                        </div>
+                    @Html.Action("AnhGioiThieu","KhuyenMaiSuKien")
+                    @Html.Action("AnhSuKien", "KhuyenMaiSuKien")
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- Welcome Message -->
+            <div class="text-center mt-4">
+                <div class="text-heading text-lg"><p>Welcome To</p></div>
+                <h2 class="my-2">GANEYA Nhật Bản</h2>
+                <div class="text-heading text-lg">
+                    <p>By <strong>Nhóm 2</strong></p>
+                </div>
+            </div>
+        </div>
+
+        @RenderBody()
+
+
+
+        <div>
+            <div class="bg-faded p-4 my-4 " id="ThongTinNhaHang">
+                @Html.Action("ThongTinNhaHang", "GioiThieu")
+            </div>
+            <div class="bg-faded p-4 my-4 " id="BinhLuan">
+                @Html.Action("DangBinhLuan","BinhLuan")        
+            </div>
+
+        </div>
+        <footer class="bg-faded text-center py-2">
+            <div class="container">
+                <p class="m-0">Copyright &copy; Van Khanh</p>
+            </div>
+        </footer>
+        <!-- Bootstrap core JavaScript -->
+        <script src="~/Content/vendor/jquery/jquery.min.js"></script>        
+        <script src="~/Content/vendor/popper/popper.min.js"></script>
+        <script src="~/Content/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="~/scripts/multiple-themes.js"></script>
+        @*<script src="~/scripts/giohang.js"></script>*@
+        <script>            
+
+            function heartBeat() {
+                $.get("/DatBan/GioHang", function (data) { });
+            }
+
+            $(function () {
+                setInterval("heartBeat()", 1000 * 100); // 100s gửi request một lần
+            });
+        </script>
+    </div>
+
+</body>
+
+</html>

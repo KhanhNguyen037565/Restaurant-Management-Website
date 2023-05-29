@@ -1,0 +1,20 @@
+﻿@using WebsiteNhaHang.Models
+@model List<GoiCombo>
+@{
+    ViewBag.Title = "ChiTietCombo";
+    Layout = "~/Views/layout/NguoiDung.cshtml";
+}
+
+<h2>ChiTietCombo</h2>
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td>
+            @foreach (var tag in item.MonAns)
+            {
+                @tag.TenMon
+            }
+        </td>
+    </tr>
+}

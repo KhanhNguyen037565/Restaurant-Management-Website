@@ -1,0 +1,42 @@
+﻿@model WebsiteNhaHang.Models.TaiKhoan
+@{
+    ViewBag.Title = "Thông tin tài khoản của bạn";
+    Layout = "~/Views/layout/Admin/_QuanLy.cshtml";
+}
+<div class="bg-faded p-4 my-4" style="box-shadow: 5px 3px 5px #708090;border-bottom-right-radius: 10px">
+    <div class="row">
+            <div class="col-sm-6 float-left col-sm-pull-6">
+                <table class="table">
+                    <tr>
+                        <th>Tên hiển thị</th>
+                        <td>@Model.TenNguoiDung</td>
+                    </tr>
+                    <tr>
+                        <th>Email </th>
+                        <td style="width: 30%">@Model.Email</td>
+                    </tr>
+                    <tr>
+                        <th>Địa chỉ</th>
+                        <td>@Model.DiaChi</td>
+                    </tr>
+                    <tr>
+                        <th>Số Điện Thoại</th>
+                        <td>@Model.SoDienThoai</td>
+                    </tr>
+                    <tr>
+                        <th>Loại Tài Khoản</th>
+                        <td>@Model.LoaiTaiKhoan1.TenLoaiTaiKhoan</td>
+                    </tr>
+                    <tr>
+                        
+                        <th><i class="icon-pencil bigger-130 green">@Html.ActionLink("Sửa Thông Tin", "Edit2", new { id = Session["MaTaiKhoan"] })</i> </th>
+                    </tr>
+                </table>
+            </div>
+            <div id="CoHinhDaiDien" class="col-sm-6 float-left col-sm-push-6" style="border-bottom-right-radius: 20px">
+                @*<h5 class="text-center text-info">Hình đại diện</h5>*@
+                <img src="@Url.Content("~/Content/img/TaiKhoan/" + @Model.HinhAnh)" class="rounded mx-auto d-block" style="box-shadow: 5px 3px 5px #008080;width: 50%">
+            </div>
+
+        </div>
+    </div>

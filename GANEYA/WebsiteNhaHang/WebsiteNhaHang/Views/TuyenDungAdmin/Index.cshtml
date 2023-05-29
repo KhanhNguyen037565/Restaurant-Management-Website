@@ -1,0 +1,81 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@model PagedList.PagedList<WebsiteNhaHang.Models.TuyenDung>
+
+@{
+    ViewBag.Title = "Quản lý tuyển dụng";
+    Layout = "~/Views/layout/Admin/_QuanLy.cshtml";
+}
+
+
+<div class="row-fluid">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.First().TenTuyenDung)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().NgayDang)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().NgayBatDau)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().NgayKetThuc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().ChiTiet)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().TaiKhoan.Email)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenTuyenDung)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NgayDang)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NgayBatDau)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NgayKetThuc)
+                </td>
+                <td style="max-width:10%">
+                    @Html.DisplayFor(modelItem => item.ChiTiet)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TaiKhoan.Email)
+                </td>
+                <td>
+                    @Html.ActionLink("Sửa", "Edit", new { id = item.MaTuyenDung }) |
+                    @Html.ActionLink("Xóa", "Delete", new { id = item.MaTuyenDung })
+                </td>
+            </tr>
+        }
+
+    </table>
+    <div class="dataTables_paginate paging_bootstrap pagination align-center ml-2">
+        @Html.ActionLink("Thêm bài tuyển dụng", "Create")
+    </div>
+    <div class="row-fluid ml-2">
+        <div class="span6">
+            <div class="dataTables_info" id="sample-table-2_info">
+                Trang: @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+            </div>
+        </div>
+        <div class="span6">
+            <div class="dataTables_paginate paging_bootstrap pagination">
+                <ul>
+                    @Html.PagedListPager(Model, Page => Url.Action("Index", new { Page = Page }))
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

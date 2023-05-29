@@ -1,0 +1,100 @@
+﻿@using WebsiteNhaHang.Models
+@model List<MonAn>
+@{
+    ViewBag.Title = "MonAnTheoLoai";
+    Layout = "~/Views/layout/NguoiDung.cshtml";
+}
+<style>
+    #carouselExampleIndicators {
+        display: none;
+    }
+</style>
+<div class="bg-faded p-4 my-4">
+    <hr class="divider">
+    <h2 class="text-center text-lg text-uppercase my-0">
+        Danh Sách Các Món
+    </h2>
+    <hr class="divider">
+    <div class="row">
+        @ViewBag.MonAn
+        @foreach (var item in Model)
+        {
+            <div class="media col-md-4 mb-4">
+                <div class="card" style="width: 20rem; box-shadow: 5px 3px 5px #708090">
+                    <img class="card-img-top" src="@Url.Content("~/Content/img/MonAn/" + item.HinhAnh)" style="max-height: 225px; min-height: 225px" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">@item.TenMon </h4>
+                        <p class="card-text">
+                            Giá món ăn: <b style="color: #FF4000">@string.Format("{0:0,0}", @item.Gia)</b> VND
+                        </p>
+                        <div>
+                            <div class="col-sm-6 float-left">
+                                @using (Html.BeginForm("ThemGioHang", "DatBan", new { @iMaSP = @item.MaMon, @iLoaiDat = 1, @strURL = Request.Url.ToString() }))
+                                {
+                                    <input type="submit" value="Đặt món" id="btnGioHang" class="btn btn-info" />
+                                    @*<a href="#" class="btn btn-info">Đặt món</a>*@
+                                }
+                            </div>
+                            <div class="col-sm-5 float-left">
+                                <button style="font-family: 'Roboto Condensed', sans-serif" class="btn btn-info" data-toggle="modal" data-target=".bd-example-modal-lg-@item.MaMon-3">Xem Chi Tiết</button>
+                            </div>
+                        </div>
+                        <div class="modal fade bd-example-modal-lg-@item.MaMon-3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header text-center">
+                                        <h5 class="modal-title  text-center">@item.TenMon</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body pre-scrollable text-center" style="min-height: 450px">
+                                        <img src="@Url.Content("~/Content/img/MonAn/" + item.HinhAnh)" class="img-fluid" alt="Responsive image" style="width: 800px">
+                                        <p class="text-left">@item.ChiTiet</p>
+
+                                        <br/>
+                                        <p class="text-left">Số lần được đặt: @item.SoLuotDat</p>
+
+                                    </div>
+                                    <div class="card-footer text-muted" style="max-height: 60px">
+                                        <div class="float-left ml-3">
+                                            <h5>
+                                                Giá: <p style="color: #FF4000">@string.Format("{0:0,0}", @item.Gia) </p> VND
+                                            </h5>
+                                        </div>
+                                        <div class="float-right col col-sm-4">
+                                            <div class="col-sm-6 float-left">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Xem sau</button>
+                                            </div>@*<button type="button" class="btn btn-primary">Đặt món</button>*@
+                                            <div class="col-sm-4 float-left">
+                                                @using (Html.BeginForm("ThemGioHang", "DatBan", new { @iMaSP = @item.MaMon, @iLoaiDat = 1, @strURL = Request.Url.ToString() }))
+                                                {
+                                                    <input type="submit" value="Đặt món" id="btnGioHang" class="btn btn-info" />
+                                                        @*<a href="#" class="btn btn-info">Đặt món</a>*@
+                                                }
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>
+<div class="bg-faded p-4 my-4">
+    <hr class="divider">
+    <h2 class="text-center text-lg text-uppercase my-0">
+        Danh sách các loại món ăn
+    </h2>
+    <hr class="divider">
+    <div class="row">
+        @Html.Action("LoaiMonAn", "ThucDon")
+    </div>
+</div>
+
+

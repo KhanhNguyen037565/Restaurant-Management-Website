@@ -1,0 +1,201 @@
+﻿@using WebsiteNhaHang.Models
+@model List<GioHang>
+@{
+    int i = 0;
+    string a=null;
+}
+<link href="~/Content/datetime/jquery.datetimepicker.css" rel="stylesheet" />  
+<script src="~/Content/datetime/jquery.js"></script> 
+<script src="~/Content/datetime/build/jquery.datetimepicker.full.js"></script>  
+<div class="modal fade bd-example-modal-lg-9-m" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-center">Giỏ hàng</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body pre-scrollable">
+                <div class="row">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Hình ảnh</th>
+                                <th>Loại</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Giá</th>
+                                <th style="width:15%">Số lượng</th>
+                                <th>Thành tiền</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                i++;
+                                if (@item.iLoaiDat == 1)
+                                {
+                                    a = "Món ăn";
+                                }
+                                if (@item.iLoaiDat == 2) { a = "Gói Combo"; }
+                                <tr>
+                                    <td>@i</td>
+                                    <td><img class="card-img-top" src="@Url.Content("~/Content/img/MonAn/" + item.sHinhAnh)" style="max-width: 10rem;min-width:100px" alt="Card image cap" /></td>
+                                    <td>@a</td>
+                                    <td>@item.sTenSp</td>                                    
+                                    <td>@string.Format("{0:0,0}", @item.dDonGia) VND</td>
+                                    <td>                                        
+                                        <input type="number" class="txtSoLuong rounded text-center" id="txtSoLuong-@i" data-id="@item.iMaSP" data-loai="@item.iLoaiDat" value="@item.iSoLuong" min="1" max="15" />
+                                        <button class="txtCapNhap btn btn-light mt-1 text-left"style="width:90%">Cập Nhập</button>
+                                        <script>
+                                            $('.txtCapNhap').off('click').on('click', function () {
+                                                var soLuong = $('#txtSoLuong-@i').val();
+                                                var maSP = $('#txtSoLuong-@i').data('id');
+                                                var loaiDat = $('#txtSoLuong-@i').data('loai');
+                                                $.ajax({
+
+                                                    type: 'POST',
+                                                    dataType: 'json',
+                                                    data: {
+                                                        iSoLuong: soLuong,
+                                                        iMaSP: maSP,
+                                                        iLoaiDat: loaiDat,
+                                                    },
+                                                    url: '/DatBan/CapNhapSoLuong',
+                                                    success: function (res) {
+                                                        if (res.status == true) {
+                                                            window.location.href = $(location).attr('href');
+                                                        }
+                                                    },
+                                                })
+                                            });
+                                        </script>                                                                                 
+                                    </td>                                        
+                                    <td>@string.Format("{0:0,0}", @item.dThanhTien) VND</td>
+                                    <td>
+                                        <button type="button" class="close" id="txtXoa-@i" data-id="@item.iMaSP" data-loai="@item.iLoaiDat" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <script>                                                                                        
+                                            $('#txtXoa-@i').off('click').on('click', function () {
+                                                var maSP = $('#txtXoa-@i').data('id');
+                                                var loai = $('#txtXoa-@i').data('loai')
+                                                $.ajax({
+                                                    type: 'POST',
+                                                    dataType: 'json',
+                                                    data: {
+                                                        iMaSP: maSP,
+                                                        iLoaiDat: loai,
+                                                    },
+                                                    url: '/DatBan/XoaGioHang',
+                                                    success: function (res) {
+                                                        if (res.status == true) {
+                                                            window.location.href = $(location).attr('href');
+                                                        }
+                                                    },
+                                                })
+                                            });
+                                        </script>
+                                    </td>
+                                </tr>
+
+                            }
+                        </tbody>
+                    </table>
+                </div>                
+            </div>
+            <div class="modal-footer row ml-0 mr-0">                
+                <div class="col-md-8 pr-0 mr-auto">
+                    <div class="col-lg-12 float-left">
+                        <div class="col-md-5 float-left">
+                            <div class="input-group">
+                                <span class="input-group-addon col-7" id="basic-addon1">Số người</span>
+                                <input type="number" class="form-control col-5 txtSoNguoi" min="1" max="20" value="1" data-toggle="tooltip" data-placement="right" title="Số người tham gia." />
+                            </div>
+                        </div>                        
+                        <div class="col-md-7 float-left">
+                            <div class="input-group">                                
+                                <span class="input-group-addon col-5" id="basic-addon1">Ngày đến</span>
+                                <input type="text" class="form-control col-7 txtNgayAn" id="datetimepicker" onkeyup="check()" data-toggle="tooltip" data-placement="right" title="Khuyến khích đặt ít nhất trước 3 tiếng để chúng tôi có thời gian chuẩn bị!" />
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="mt-3 float-left col-lg-6">
+                        <h5>Tổng tiền: @string.Format("{0:0,0}", @ViewBag.TongTien) <span class="text-danger">VND</span></h5>                       
+                    </div>
+                    <span id="Loi"></span>                    
+                </div>
+                <div class="col-md-3 float-left pl-0">                    
+                    <button type="button" id="btnXoa" class="btn btn-secondary">Xóa Tất Cả</button>
+                    <button type="button" class="btn btn-primary" id="bntDatBan">Đặt Bàn</button>                    
+                </div>                               
+            </div>
+        </div>
+    </div>
+
+</div>  
+<script>
+    $('#btnXoa').off('click').on('click', function () {
+        $.ajax({
+            url: '/DatBan/XoaTatCa',
+            dataType: 'json',
+            type: 'POST',
+            success: function (res) {
+                if (res.status == true) {
+                    //alert("Xóa thành công!")
+
+                    window.location.href = $(location).attr('href');
+                }
+            }
+        })
+    });
+   
+    $('#bntDatBan').off('click').on('click', function () {
+        var soNguoi = $('.txtSoNguoi').val();
+        var ngayAn = $('.txtNgayAn').val();
+        if (ngayAn == "") {
+            document.getElementById("Loi").innerHTML =
+                "Quý khách chưa nhập ngày đến ăn..";
+        }
+        else
+        {
+            $.ajax({
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    soNguoi: soNguoi,
+                    ngayAn: ngayAn,
+                },
+                url: '/DatBan/ThanhToan',
+                success: function (res) {
+                    if (res.status == true) {
+                        alert('Đặt bàn thành công. Xin cảm ơn bạn đã sử dụng dịch vụ của chúng tôi!')
+                        window.location.href = $(location).attr('href');
+                    }
+                    else
+                    {
+                        if (confirm(res) == true) {
+                            window.location.href = "/TaiKhoan/DangNhap";
+                        }
+                    }                   
+                },
+            })
+        }                   
+    });
+
+    //chọn ngày giờ
+    var tomorrow = new Date();
+    tomorrow.setHours(tomorrow.getHours() + 3);
+    $('#datetimepicker').datetimepicker({
+        dayOfWeekStart: 1,
+        //format: 'd/m/y H:i',
+        lang: 'en',
+        //enabledHours: [14, 15, 16, 17, 18],
+        defaultDate: tomorrow,
+        minDate: tomorrow,
+        step: 10,
+    });
+</script>
+
+

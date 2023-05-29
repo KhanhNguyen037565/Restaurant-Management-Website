@@ -1,0 +1,68 @@
+﻿@model IEnumerable<WebsiteNhaHang.Models.ThongTinNhaHang>
+
+@{
+    ViewBag.Title = "Thông tin nhà hàng";
+    Layout = "~/Views/layout/Admin/_QuanLy.cshtml";
+    if (Convert.ToInt32(Session["LoaiTK"]) == 3)
+    {
+        <style>
+            #SuaThongTin {
+                display: none;
+            }
+        </style>
+    }
+}
+
+<table class="table">
+@foreach (var item in Model)
+{
+        <tr>
+            <td>Tên nhà hàng:</td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenNhaHang)
+            </td>
+        </tr>
+        <tr>
+            <td>Địa chỉ:</td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiaChi)
+            </td>
+        </tr>
+        <tr>
+            <td>Email của nhà hàng:</td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+        </tr>
+        <tr>
+            <td>Số điện thoại 1:</td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoDienThoai1)
+            </td>
+        </tr>
+        <tr>
+            <td>Số điện thoại 2:</td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoDienThoai2)
+            </td>
+        </tr>
+        <tr>
+            <td>Giờ mở cửa</td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ThongTinKhac)
+            </td>
+        </tr>
+        <tr>
+            <td>Map : </td>
+            <td style="max-width:30rem">
+                @Html.DisplayFor(modelItem => item.URLMap)
+            </td>
+        </tr>
+        <tr>
+            <td id="SuaThongTin">
+                @Html.ActionLink("Sửa", "Edit", new { id = item.MaThongTin })
+            </td>
+        </tr>
+}
+
+</table>

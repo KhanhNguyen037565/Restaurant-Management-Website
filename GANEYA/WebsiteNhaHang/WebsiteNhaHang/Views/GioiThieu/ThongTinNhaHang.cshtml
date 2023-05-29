@@ -1,0 +1,30 @@
+﻿@using WebsiteNhaHang.Models
+@model List<ThongTinNhaHang>
+
+@foreach (var item in Model)
+{
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card mt-2" style="width: auto;height: 30rem">
+                <h4 class="card-header text-center text-secondary">Địa chỉ nhà hàng</h4>
+                <div id="map" style="width:500px;height:500px;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62669.230615574445!2d106.59554194863284!3d10.976433900000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d126192a7021%3A0x4aa98ac6c8669c52!2zU1VTSEkgQUtBVEFJWU8gVEjhu6YgROG6plUgTeG7mFQ!5e0!3m2!1svi!2s!4v1684316561940!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+                @*<iframe src="@item.URLMap" min-width="500" height="500" frameborder="0" style="border: 0;"></iframe>*@
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card mt-2" style="width: auto;">
+                <h3 class=" card-header text-center text-secondary">Thông tin liên hệ</h3>
+                <p class="card-text ml-2">
+                    Địa chỉ: @item.DiaChi
+                </p>
+                <p class="card-text ml-2">
+                    Điện thoại: @item.SoDienThoai1 - @item.SoDienThoai2
+                </p>
+                <p class="card-text ml-2">
+                    Giờ mở cửa: @item.ThongTinKhac.
+                </p>
+            </div>
+        </div>
+    </div>
+}

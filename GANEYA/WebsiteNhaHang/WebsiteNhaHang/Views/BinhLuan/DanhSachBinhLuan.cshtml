@@ -1,0 +1,17 @@
+﻿@using WebsiteNhaHang.Models
+@model List<BinhLuan>
+
+@foreach (var item in Model)
+{
+    <div class="media mb-3">
+        <img class="d-flex mr-3" src="@Url.Content("~/Content/img/TaiKhoan/"+item.TaiKhoan.HinhAnh)" alt="Generic placeholder image" style="max-width: 80px; max-height: 100px">
+        <div class="media-body">
+            <h5 class="mt-0"><strong>@item.TaiKhoan.TenNguoiDung</strong></h5>
+            <p class="card-text">
+                <small class="text-muted">@item.NgayDang</small>
+            </p>
+            @item.BinhLuan1
+        </div>
+    </div>
+}
+ 

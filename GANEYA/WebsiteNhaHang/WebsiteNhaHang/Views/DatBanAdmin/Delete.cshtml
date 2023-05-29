@@ -1,0 +1,60 @@
+﻿@model WebsiteNhaHang.Models.DatBan
+
+@{
+    ViewBag.Title = "Xóa lịch sử đặt";
+    Layout = "~/Views/layout/Admin/_QuanLy.cshtml";
+}
+
+<div class="ml-2 mt-3">
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayDatBan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayDatBan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayThucHien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayThucHien)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SoNguoi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoNguoi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TongTien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TongTien)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TaiKhoan.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TaiKhoan.Email)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-default" /> |
+            @Html.ActionLink("Về trang quản lý", "Index")
+        </div>
+    }
+</div>

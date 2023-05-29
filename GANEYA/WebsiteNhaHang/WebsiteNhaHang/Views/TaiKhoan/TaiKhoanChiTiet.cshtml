@@ -1,0 +1,76 @@
+﻿@model WebsiteNhaHang.Models.TaiKhoan
+
+@{
+    ViewBag.Title = "Chi tiết tài khoản";
+    Layout = "~/Views/layout/NguoiDung.cshtml";
+}
+<style>
+    #carouselExampleIndicators, #BinhLuan,#KhongHinhDaiDien {
+        display: none;
+    }
+</style>
+@{
+    if (Model.HinhAnh == null)
+    {
+        <style>
+            /*#KhongHinhDaiDien {
+                display: block;
+            }*/
+            #CoHinhDaiDien{
+                display: none;
+            }
+        </style>
+    }
+}
+<div class="bg-faded p-4 my-4" style="box-shadow: 5px 3px 5px #708090;border-bottom-right-radius: 10px">
+    <hr class="divider">
+    <h2 class="text-center text-lg text-uppercase my-0">
+        Quản lý tài khoản
+    </h2>
+    <hr class="divider">
+    <div class="row">
+        <div class="col-sm-3 mr-3">
+            <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action active">
+                    Thông tin tài khoản
+                </button>
+                <button type="button" class="list-group-item list-group-item-action">Lịch sử đặt bàn</button>
+                <button type="button" class="list-group-item list-group-item-action">Các bình luận</button>
+                <button type="button" class="list-group-item list-group-item-action" disabled>@Session["EmailDangNhap"]</button>
+            </div>
+        </div>
+        <div class="col-sm-8" style="box-shadow: 5px 3px 5px #708090; border-bottom-right-radius: 10px">
+
+            <div class="col-sm-6 float-left col-sm-pull-6">
+                <table class="table">
+                    <tr>
+                        <th>Tên hiển thị</th>
+                        <td>@Model.TenNguoiDung</td>
+                    </tr>
+                    <tr>
+                        <th>Email </th>
+                        <td style="width: 30%">@Model.Email</td>
+                    </tr>
+                    <tr>
+                        <th>Địa chỉ</th>
+                        <td>@Model.DiaChi</td>
+                    </tr>
+                    <tr>
+                        <th>Số Điện Thoại</th>
+                        <td>@Model.SoDienThoai</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="KhongHinhDaiDien" class="col-sm-6 float-left col-sm-push-6" style="border-bottom-right-radius: 20px">
+                <h5 class="text-center text-info">Hình đại diện</h5>
+                <img src="~/Content/img/TaiKhoan/khonghinh.JPG" class="rounded mx-auto d-block mt-3 mb-3" style="box-shadow: 5px 3px 5px #008080;width: 50%" />
+            </div>
+            <div id="CoHinhDaiDien" class="col-sm-6 float-left col-sm-push-6" style="border-bottom-right-radius: 20px">
+                <h5 class="text-center text-info">Hình đại diện</h5>
+                <img src="@Url.Content("~/Content/img/TaiKhoan/" + @Model.HinhAnh)" class="rounded mx-auto d-block" style="box-shadow: 5px 3px 5px #008080;width: 50%">
+            </div>
+
+        </div>
+    </div>
+</div>
+

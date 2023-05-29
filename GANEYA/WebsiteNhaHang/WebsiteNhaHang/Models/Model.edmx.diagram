@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="16796b393cf84db399618fcf2cd5f458" Name="Diagram1">
+        <EntityTypeShape EntityType="NhaHangModel1.BinhLuan" Width="1.5" PointX="5.25" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel1.DanhSachDatCombo" Width="1.5" PointX="7.5" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel1.DanhSachMonDatBan" Width="1.5" PointX="10.5" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel1.DatBan" Width="1.5" PointX="5.25" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel1.GoiCombo" Width="1.5" PointX="5.25" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel1.KhongGianNhaHang" Width="1.5" PointX="8.25" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel1.KhuyenMai" Width="1.5" PointX="5.25" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel1.KieuDatBan" Width="1.5" PointX="5.25" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel1.LoaiKhongGianNhaHang" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel1.LoaiMon" Width="1.5" PointX="5.25" PointY="31.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel1.LoaiTaiKhoan" Width="1.5" PointX="0.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel1.MonAn" Width="1.5" PointX="7.5" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel1.SuKien" Width="1.5" PointX="5.25" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel1.sysdiagram" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel1.TaiKhoan" Width="1.5" PointX="3" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel1.ThongTinNhaHang" Width="1.5" PointX="5.25" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhaHangModel1.TuyenDung" Width="1.5" PointX="5.25" PointY="27.375" IsExpanded="true" />
+        <AssociationConnector Association="NhaHangModel1.FK_BinhLuan_TaiKhoan" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel1.FK_DanhSachDatCombo_DatBan" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel1.FK_DanhSachDatCombo_GoiCombo1" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel1.FK_DanhSachDatCombo_KieuDatBan1" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel1.FK_DanhSachMonDatBan_DatBan" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel1.FK_DanhSachMonDatBan_KieuDatBan1" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel1.FK_DanhSachMonDatBan_MonAn" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel1.FK_DatBan_TaiKhoan" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel1.FK_KhongGianNhaHang_LoaiKhongGianNhaHang" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel1.FK_KhongGianNhaHang_TaiKhoan" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel1.FK_KhuyenMai_TaiKhoan" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel1.FK_MonAn_LoaiMon" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel1.FK_TaiKhoan_LoaiTaiKhoan" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel1.FK_SuKien_TaiKhoan1" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel1.FK_ThongTinNhaHang_TaiKhoan1" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel1.FK_TuyenDung_TaiKhoan" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel1.GiamGia" ManuallyRouted="false" />
+        <AssociationConnector Association="NhaHangModel1.GoiComboChiTiet" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

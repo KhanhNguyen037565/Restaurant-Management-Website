@@ -1,0 +1,62 @@
+﻿@model WebsiteNhaHang.Models.BinhLuan
+
+@{
+    <style>
+        #DangNhap1 {
+            display: none;
+        }
+    </style>
+}
+@if (ViewBag.ThongBao != null)
+{
+    <style>
+        #BinhLuan2 {
+            display: none;
+        }
+
+        #DangNhap1 {
+            display: block;
+        }
+    </style>
+}
+<hr class="divider">
+<h2 class="text-center text-lg text-uppercase my-0">
+    Bình <strong>Luận</strong>
+</h2>
+<hr class="divider">
+
+<!-- /.container -->
+<div  class="form-group row">
+
+    <label class="col-5" for="exampleFormControlTextarea1">Hãy cho chúng tôi biết ý kiến của bạn: </label>
+    <div class="col-8"  id="BinhLuan2">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <div class="form-horizontal float-left" style="width: 90%">
+                @Html.ValidationSummary(true, "", new {@class = "text-danger"})
+                <div class="form-group col-12">
+                    <div>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" name="BinhLuan1" rows="4"></textarea>                        
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-0 col-md-10 pt-0">
+                        <input type="submit" value="Đăng Bình Luận" class="btn btn-outline-secondary"/>
+                    </div>
+                    
+                </div>
+            </div>
+        }
+    </div>
+    <div id="DangNhap1" class="col-8">
+        <span class="text-danger">@ViewBag.ThongBao!!!</span>
+        <br/>
+        <a href="@Url.Action("DangNhap","TaiKhoan")" class="btn btn-primary " role="button" aria-pressed="true">Đăng Nhập</a>
+    </div>   
+</div>
+<div>
+    <hr />
+    <label for="exampleFormControlTextarea1"><strong>Danh sách bình luận: </strong></label>
+</div>
+@Html.Action("DanhSachBinhLuan", "BinhLuan")    

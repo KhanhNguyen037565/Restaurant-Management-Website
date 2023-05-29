@@ -1,0 +1,9 @@
+﻿@using WebsiteNhaHang.Models
+@model List<ThongTinNhaHang>
+
+@foreach (var item in Model)
+{
+    <div class="tagline-upper text-center text-heading text-shadow text-white mt-5 d-none d-lg-block mb-2">@item.TenNhaHang</div>
+        <div class="tagline-lower text-center text-expanded text-shadow text-uppercase text-white mb-5 d-none d-lg-block">@item.DiaChi | @item.SoDienThoai1 | @item.SoDienThoai2 </div>
+
+}

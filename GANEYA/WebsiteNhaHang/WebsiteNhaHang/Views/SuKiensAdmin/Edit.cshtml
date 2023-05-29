@@ -1,0 +1,66 @@
+﻿@model WebsiteNhaHang.Models.SuKien
+
+@{
+    ViewBag.Title = "Sửa thông tin sự kiện";
+    Layout = "~/Views/layout/Admin/_QuanLy.cshtml";
+}
+
+@using (Html.BeginForm("Edit", "SuKiensAdmin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal mt-2 ml-3">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.MaSuKien)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TenSuKien, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TenSuKien, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.TenSuKien, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NgayBatDau, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.NgayBatDau, "{0:yyyy-MM-ddTHH:mm}", new { type = "datetime-local", @class = "form-control", value = Model.NgayBatDau.Value.ToString("yyyy-MM-ddTHH:mm") })
+                @Html.ValidationMessageFor(model => model.NgayBatDau, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NgayKetThuc, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.NgayKetThuc, "{0:yyyy-MM-ddTHH:mm}", new { type = "datetime-local", @class = "form-control", value = Model.NgayKetThuc.Value.ToString("yyyy-MM-ddTHH:mm") })
+                @Html.ValidationMessageFor(model => model.NgayKetThuc, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.HinhAnh, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <img src="~/Content/img/MonAn/KhuyenMai-Sukien/@Model.HinhAnh" width="30%" height="30%" />
+                @Html.Hidden("oldimage", @Model.HinhAnh)
+                @Html.TextBoxFor(model => model.HinhAnh, null, new { type = "file", @class = "form-control", id = "formFile" })
+                @Html.ValidationMessageFor(model => model.HinhAnh, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.ChiTiet, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ChiTiet, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ChiTiet, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Lưu" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div class="ml-3">
+    @Html.ActionLink("Về trang quản lý", "Index")
+</div>

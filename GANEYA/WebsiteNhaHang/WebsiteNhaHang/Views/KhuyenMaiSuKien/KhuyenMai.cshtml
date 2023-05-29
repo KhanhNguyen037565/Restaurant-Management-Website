@@ -1,0 +1,74 @@
+﻿@using WebsiteNhaHang.Models
+@model List<KhuyenMai>
+@{
+    ViewBag.Title = "Khuyến mại và sự kiện của nhà hàng";
+    Layout = "~/Views/layout/NguoiDung.cshtml";
+}
+<style>
+    #GioHang1 {
+        display: none;
+    }
+</style>
+<div id="ThucDon" class="bg-faded p-4 my-4">
+    <hr class="divider">
+
+    <h2 class="text-center text-lg text-uppercase my-0">
+        Khuyến mãi và sự kiện
+    </h2>
+    <hr class="divider">
+    <div class="row">
+    <div class="card col-md-6">
+        <div class="card-header text-center">
+            <h3>Khuyến Mãi</h3>
+        </div>
+        <div class="card-body">
+            <ul class="list-unstyled">
+                @foreach (var item in Model)
+                {
+                    <li class="media mb-3">
+                        <img class="d-flex mr-3 " src="@Url.Content("~/Content/img/MonAn/KhuyenMai-Sukien/"+item.HinhAnh)" style="max-width:100px" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">@item.TenKhuyenMai</h5>
+                            @item.ChiTietKhuyenMai <button type="button" class="btn btn-link"data-toggle="modal" data-target=".bd-example-modal-lg-@item.MaKhuyenMai">Xem chi tiết</button>
+                            <div class="modal fade bd-example-modal-lg-@item.MaKhuyenMai" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">@item.TenKhuyenMai</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body pre-scrollable text-center" style="min-height: 450px">
+                                            <img src="@Url.Content("~/Content/img/MonAn/KhuyenMai-Sukien/" + item.HinhAnh)" class="img-fluid" alt="Responsive image" style="width: 800px">
+                                            <p class="text-left">@item.ChiTietKhuyenMai</p>
+                                            <br />
+                                            <p class="text-left">Người Đăng: @item.NguoiDang</p>
+
+                                        </div>
+                                        <div class="card-footer text-muted" style="max-height: 60px">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                }
+
+            </ul>
+        </div>
+    </div>
+    <div class="card col-md-6">
+        <div class="card-header text-center">
+            <h3>Sự Kiện</h3>
+        </div>
+        <div class="card-body">
+            <ul class="list-unstyled">
+                @Html.Action("SuKien","KhuyenMaiSuKien")
+
+            </ul>
+        </div>
+    </div>
+</div>
+</div>

@@ -1,0 +1,83 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@model PagedList.PagedList<WebsiteNhaHang.Models.DatBan>
+
+
+@{
+    ViewBag.Title = "Danh Sách Đặt Món Của Khách Hàng";
+    Layout = "~/Views/layout/Admin/_QuanLy.cshtml";
+    int i = 0;
+    if (Convert.ToInt32(Session["LoaiTK"]) == 3)
+    {
+        <style>
+            #XoaDatBan{display:none}
+        </style>
+    }
+}
+
+<div class="row-fluid">
+    <table class="table mt-2 ml-2">
+        <tr>
+            <th>#</th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().NgayDatBan)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().NgayThucHien)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().SoNguoi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().TaiKhoan.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().TongTien)
+            </th>
+
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            i++;
+            <tr>
+                <td>@i</td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NgayDatBan)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NgayThucHien)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SoNguoi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TaiKhoan.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TongTien)
+                </td>
+
+                <td id="XoaDatBan">
+                    @Html.ActionLink("Xóa", "Delete", new { id = item.MaDatBan })
+                </td>
+            </tr>
+        }
+
+    </table>
+    <div class="row-fluid ml-2">
+        <div class="span6">
+            <div class="dataTables_info" id="sample-table-2_info">
+                Trang: @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+            </div>
+        </div>
+        <div class="span6">
+            <div class="dataTables_paginate paging_bootstrap pagination">
+                <ul>
+                    @Html.PagedListPager(Model, Page => Url.Action("Index", new { Page = Page }))
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

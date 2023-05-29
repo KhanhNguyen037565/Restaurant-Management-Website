@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a58f71daf5c24633ace180082a0edd7d" Name="Diagram1">
+        <EntityTypeShape EntityType="NhaHangModel.BinhLuan" Width="1.5" PointX="5.25" PointY="8.5" />
+        <EntityTypeShape EntityType="NhaHangModel.DanhSachDatCombo" Width="1.5" PointX="7.5" PointY="5.375" />
+        <EntityTypeShape EntityType="NhaHangModel.DanhSachMonDatBan" Width="1.5" PointX="7.5" PointY="2.375" />
+        <EntityTypeShape EntityType="NhaHangModel.DatBan" Width="1.5" PointX="5.25" PointY="5" />
+        <EntityTypeShape EntityType="NhaHangModel.GoiCombo" Width="1.5" PointX="5.25" PointY="29.375" />
+        <EntityTypeShape EntityType="NhaHangModel.KieuDatBan" Width="1.5" PointX="5.25" PointY="1.5" />
+        <EntityTypeShape EntityType="NhaHangModel.KhongGianNhaHang" Width="1.5" PointX="8.25" PointY="13.625" />
+        <EntityTypeShape EntityType="NhaHangModel.KhuyenMai" Width="1.5" PointX="5.25" PointY="22" />
+        <EntityTypeShape EntityType="NhaHangModel.LoaiKhongGianNhaHang" Width="1.5" PointX="6" PointY="15.125" />
+        <EntityTypeShape EntityType="NhaHangModel.LoaiMon" Width="1.5" PointX="5.25" PointY="32.25" />
+        <EntityTypeShape EntityType="NhaHangModel.LoaiTaiKhoan" Width="1.5" PointX="0.75" PointY="14.125" />
+        <EntityTypeShape EntityType="NhaHangModel.MonAn" Width="1.5" PointX="7.5" PointY="22" />
+        <EntityTypeShape EntityType="NhaHangModel.SuKien" Width="1.5" PointX="5.25" PointY="11.25" />
+        <EntityTypeShape EntityType="NhaHangModel.TaiKhoan" Width="1.5" PointX="3" PointY="12.75" />
+        <EntityTypeShape EntityType="NhaHangModel.TuyenDung" Width="1.5" PointX="5.25" PointY="25.875" />
+        <EntityTypeShape EntityType="NhaHangModel.ThongTinNhaHang" Width="1.5" PointX="5.25" PointY="18.25" />
+        <AssociationConnector Association="NhaHangModel.FK_BinhLuan_TaiKhoan" />
+        <AssociationConnector Association="NhaHangModel.FK_DanhSachDatCombo_DatBan" />
+        <AssociationConnector Association="NhaHangModel.FK_DanhSachDatCombo_KieuDatBan1" />
+        <AssociationConnector Association="NhaHangModel.FK_DanhSachMonDatBan_DatBan" />
+        <AssociationConnector Association="NhaHangModel.FK_DanhSachMonDatBan_KieuDatBan1" />
+        <AssociationConnector Association="NhaHangModel.FK_DatBan_TaiKhoan" />
+        <AssociationConnector Association="NhaHangModel.FK_KhongGianNhaHang_LoaiKhongGianNhaHang" />
+        <AssociationConnector Association="NhaHangModel.FK_KhongGianNhaHang_TaiKhoan" />
+        <AssociationConnector Association="NhaHangModel.FK_KhuyenMai_TaiKhoan" />
+        <AssociationConnector Association="NhaHangModel.FK_MonAn_LoaiMon" />
+        <AssociationConnector Association="NhaHangModel.FK_TaiKhoan_LoaiTaiKhoan" />
+        <AssociationConnector Association="NhaHangModel.FK_SuKien_TaiKhoan1" />
+        <AssociationConnector Association="NhaHangModel.FK_TuyenDung_TaiKhoan" />
+        <AssociationConnector Association="NhaHangModel.FK_ThongTinNhaHang_TaiKhoan1" />
+        <AssociationConnector Association="NhaHangModel.GoiComboChiTiet" />
+        <AssociationConnector Association="NhaHangModel.GiamGia" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

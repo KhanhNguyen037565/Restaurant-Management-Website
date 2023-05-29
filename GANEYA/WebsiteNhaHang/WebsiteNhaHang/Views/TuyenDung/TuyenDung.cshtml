@@ -1,0 +1,91 @@
+﻿@using WebsiteNhaHang.Models
+@using PagedList.Mvc
+@model PagedList.IPagedList<TuyenDung>
+
+@{
+    ViewBag.Title = "TuyenDung";
+    Layout = "~/Views/layout/NguoiDung.cshtml";
+}
+
+<style>
+    #GioHang1 {
+        display: none;
+    }
+</style>
+<div class="bg-faded p-4 my-4">
+    <div class="ml-5">
+        <hr class="divider">
+        <h2 class="text-center text-lg text-uppercase my-0">
+            Tuyển <strong>dụng </strong>
+        </h2>
+        <hr class="divider">
+        <div class="row ml-5">
+            <div id="accordion" role="tablist">
+                @foreach (var item in Model)
+            {
+                if (ViewBag.Dem == 0)
+                {
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        @item.TenTuyenDung : 
+                                        
+                                        <i class="float-right">&nbsp; đến : @Convert.ToDateTime(item.NgayKetThuc).ToString("hh:mm") ngày @Convert.ToDateTime(item.NgayKetThuc).ToString("dd/MM/yyyy ")</i>                                     
+                                        <i class="float-right">Từ : @Convert.ToDateTime(item.NgayBatDau).ToString("hh:mm") ngày @Convert.ToDateTime(item.NgayBatDau).ToString("dd/MM/yyyy ") </i>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    @item.ChiTiet
+                                    <br/>
+                                    <br />
+                                    <br />
+                                    <i class="float-right">@Convert.ToDateTime(item.NgayDang).ToString("dd/MM/yyyy ")</i>
+                                    <br/>
+                                    <i class="float-right">@item.NguoiDang</i>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="card">
+                            <div class="card-header" role="tab" id="heading-@item.MaTuyenDung">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" href="#collapse-@item.MaTuyenDung" aria-expanded="false" aria-controls="collapse-@item.MaTuyenDung">
+                                        @item.TenTuyenDung : 
+                                        <i class="float-right">&nbsp; đến : @Convert.ToDateTime(item.NgayKetThuc).ToString("hh:mm") ngày @Convert.ToDateTime(item.NgayKetThuc).ToString("dd/MM/yyyy ")</i>
+                                        <i class="float-right">Từ : @Convert.ToDateTime(item.NgayBatDau).ToString("hh:mm") ngày @Convert.ToDateTime(item.NgayBatDau).ToString("dd/MM/yyyy ") </i>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapse-@item.MaTuyenDung" class="collapse" role="tabpanel" aria-labelledby="heading-@item.MaTuyenDung" data-parent="#accordion">
+                                <div class="card-body">
+                                    @item.ChiTiet
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <i class="float-right">@Convert.ToDateTime(item.NgayDang).ToString("dd/MM/yyyy ")</i>
+                                    <br />
+                                    <i class="float-right">@item.NguoiDang</i>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    ViewBag.Dem = 1;
+                }
+            </div>
+        </div>
+
+        <div class="ml-5">
+            <div class="pt-3">
+                Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+            </div>
+            <div>
+                @Html.PagedListPager(Model, page => Url.Action("TuyenDung", new { page }))
+            </div>
+        </div>
+    </div>
+</div>

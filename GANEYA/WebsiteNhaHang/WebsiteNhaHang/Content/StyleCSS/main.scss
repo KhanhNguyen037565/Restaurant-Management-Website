@@ -1,0 +1,329 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+
+@mixin aligncenter {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+@media only screen and (max-width: 768px) {
+   [class*="col-"] {
+        width: 100%;
+    }
+}
+.home {
+    .row-one {
+        width: 100%;
+        height: 6in;
+        margin: auto;
+
+        .col-logo {
+            @include aligncenter();
+        }
+
+        .col-img-1 {
+            background-image: url('../photoHome/14 Best Restaurants In Iceland To Visit.jpg');
+            background-attachment: fixed;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top right;
+        }
+    }
+
+    .row-second {
+        width: 100%;
+        height: 6in;
+        margin: auto;
+
+        .box-img-2 {
+            height: 100%;
+            @include aligncenter();
+
+            .img {
+                width: 80%;
+                height: 80%;
+
+                img {
+                    max-width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .box-content {
+            height: 100%;
+            @include aligncenter();
+            background-color: rgb(15,158,162);
+
+            .content {
+                margin: 10% 10%;
+
+                h3 {
+                    text-align: left;
+                    color: white;
+                    margin-bottom: 30px;
+                }
+
+                p {
+                    text-align: justify;
+                    color: white;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+
+    .row-three {
+        width: 100%;
+        height: 6in;
+        margin: auto;
+        background-image: url('../photoHome/14 Best Restaurants In Iceland To Visit.jpg');
+
+        <img src="~/Content/photoHome/Ugani.png" />
+            .box-img-3 {
+            height: 100%;
+            @include aligncenter();
+
+            .img {
+                width: 80%;
+                height: 80%;
+
+                img {
+                    max-width: 100%;
+                    height: 100%;
+                    padding: 5px 0px;
+                }
+            }
+        }
+
+        .box-content {
+            height: 100%;
+            @include aligncenter();
+            background-color: rgb(15,158,162);
+
+            .content {
+                margin: 10% 10%;
+
+                h3 {
+                    text-align: left;
+                    color: white;
+                    margin-left: 30px;
+                    margin-bottom: 30px;
+                }
+
+                ul {
+                    li {
+                        text-align: justify;
+                        color: white;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .row-four {
+        width: 100%;
+        height: 6in;
+        margin: auto;
+
+        .box-img-3 {
+            height: 100%;
+            @include aligncenter();
+
+            .img {
+                width: 80%;
+                height: 80%;
+
+                img {
+                    max-width: 100%;
+                    height: 100%;
+                    padding: 5px 0px;
+                }
+            }
+        }
+
+        .box-content {
+            height: 100%;
+            @include aligncenter();
+
+            .content {
+                margin: 10% 10%;
+
+                h3 {
+                    text-align: left;
+                    color: black;
+                    margin-left: 30px;
+                    margin-bottom: 30px;
+                }
+
+                ul {
+                    li {
+                        text-align: justify;
+                        color: black;
+                        list-style: none;
+                        font-size: 20px;
+                    }
+
+                    .date {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+//Home Design
+
+.body-login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #loginForm {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+
+        .form-horizontal {
+            width: 80%;
+            height: auto;
+            border: 2px solid rgb(15,158,162);
+            border-radius: 40px;
+            padding: 30px;
+            position:relative;
+
+            h2 {
+                color: rgb(15,158,162);
+                position: absolute;
+                top: -25;
+                background-color: white;
+                padding: 0 5px;
+            }
+
+            .form-group {
+                margin: 15px 0;
+
+                .control-label {
+                    color: rgb(76,76,76);
+                    margin-bottom: 10px;
+                }
+
+                .form-control:focus {
+                    box-shadow: none
+                }
+
+                ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    li {
+                        display: inline;
+                        list-style: none;
+                        margin: 0 10px;
+
+                        label {
+                            color: rgb(76,76,76);
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: rgb(76,76,76);
+                        }
+
+                        a:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                .btnLogin {
+                    display: flex;
+                    margin: auto;
+                    font-weight: 500;
+                    padding: 0 20px;
+                    height: 40px;
+                    border-radius: 40px;
+                    background-color: rgb(15,158,162);
+                    color: white;
+                    font-size: 20px;
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+.body-register {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #registerForm {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+
+        .form-horizontal {
+            width: 80%;
+            height: auto;
+            border: 2px solid rgb(15,158,162);
+            border-radius: 40px;
+            padding: 30px;
+            position: relative;
+
+            h2 {
+                color: rgb(15,158,162);
+                position: absolute;
+                top: -25;
+                background-color: white;
+                padding: 0 5px;
+            }
+
+            .form-group {
+                margin: 15px 0;
+
+                .control-label {
+                    color: rgb(76,76,76);
+                    margin-bottom: 10px;
+                }
+
+                .form-control:focus {
+                    box-shadow: none
+                }
+
+                .btnRegister {
+                    display: flex;
+                    margin: auto;
+                    font-weight: 500;
+                    padding: 0 20px;
+                    height: 40px;
+                    border-radius: 40px;
+                    background-color: rgb(15,158,162);
+                    color: white;
+                    font-size: 20px;
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+

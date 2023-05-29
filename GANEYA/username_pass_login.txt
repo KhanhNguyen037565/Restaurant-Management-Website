@@ -1,0 +1,11 @@
+Dang nhap tai khoan quan tri:
+
+username:admin@gmail.com                                                                                                                                                                                       
+password:12345678
+
+===================================
+
+Dang nhap tai khoan khach hang:
+
+username:quyen@gmail.com                                                                                                                                                                                                                                                                                                                                                                         
+password:12345678

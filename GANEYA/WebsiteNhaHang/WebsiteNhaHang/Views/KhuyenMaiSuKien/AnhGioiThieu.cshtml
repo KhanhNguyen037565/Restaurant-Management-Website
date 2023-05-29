@@ -1,0 +1,26 @@
+﻿@using WebsiteNhaHang.Models
+@model List<KhuyenMai>
+
+@foreach (var item in Model)
+{    
+    double a = (double) (@item.TiLeGiamGia*100);
+    <div class="carousel-item">
+        <div style="max-height:32rem; height: auto">
+            <img class="d-block img-fluid w-100" src="~/Content/img/MonAn/KhuyenMai-Sukien/@item.HinhAnh" alt="">
+        </div> 
+        <div class="carousel-caption d-none d-md-block">
+            <h3 class="text-shadow">@item.TenKhuyenMai</h3>
+            <p>Giảm giá @a % từ @Convert.ToDateTime(item.NgayBatDau).ToString("dd/MM") đến @Convert.ToDateTime(item.NgayKetThuc).ToString("dd/MM")</p>
+        </div>
+    </div>
+}
+@if (Model == null)
+{
+    @Html.Action("AnhGioiThieu", "GioiThieu", new { @lanHien = 2 })
+}
+@if (Model.Count() == 1)
+{
+    @Html.Action("AnhGioiThieu", "GioiThieu", new { @lanHien = 1 })
+}
+
+

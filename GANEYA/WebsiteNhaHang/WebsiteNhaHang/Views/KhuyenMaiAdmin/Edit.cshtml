@@ -1,0 +1,81 @@
+﻿@model WebsiteNhaHang.Models.KhuyenMai
+
+@{
+    ViewBag.Title = "Sửa thông tin khuyến mãi";
+    Layout = "~/Views/layout/Admin/_QuanLy.cshtml";
+}
+@using (Html.BeginForm("Edit", "KhuyenMaiAdmin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.MaKhuyenMai)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TenKhuyenMai, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TenKhuyenMai, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.TenKhuyenMai, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ChiTietKhuyenMai, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ChiTietKhuyenMai, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ChiTietKhuyenMai, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.HinhAnh, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.HinhAnh, null, new { type = "file", @class = "form-control" })
+                <img src="~/Content/img/MonAn/KhuyenMai-Sukien/@Model.HinhAnh" width="100px" height="100px" />
+                @Html.Hidden("oldimage", @Model.HinhAnh)
+                @Html.ValidationMessageFor(model => model.HinhAnh, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NgayBatDau, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @*@Html.TextBoxFor(model => model.NgayBatDau, new { type = "datetime-local" })*@
+                @Html.TextBoxFor(model => model.NgayBatDau, "{0:yyyy-MM-ddTHH:mm}", new { type = "datetime-local", @class = "form-control", value = Model.NgayBatDau.Value.ToString("yyyy-MM-ddTHH:mm") })
+
+                @*@Html.EditorFor(model => model.NgayBatDau, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.ValidationMessageFor(model => model.NgayBatDau, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NgayKetThuc, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.NgayKetThuc, "{0:yyyy-MM-ddTHH:mm}", new { type = "datetime-local", @class = "form-control", value = Model.NgayBatDau.Value.ToString("yyyy-MM-ddTHH:mm") })
+
+                @*@Html.TextBoxFor(model => model.NgayKetThuc, new { type = "datetime-local" })*@
+                @*@Html.EditorFor(model => model.NgayKetThuc, new { htmlAttributes = new { @class = "form-control" } })*@
+                @Html.ValidationMessageFor(model => model.NgayKetThuc, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TiLeGiamGia, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TiLeGiamGia, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.TiLeGiamGia, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Lưu" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Về trang quản lý", "Index")
+</div>

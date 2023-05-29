@@ -1,0 +1,64 @@
+﻿@using System.Web.Mvc.Html
+
+@model WebsiteNhaHang.Models.TaiKhoan
+
+@{
+    ViewBag.Title = "DangNhap";
+    Layout = "~/Views/layout/NguoiDung.cshtml";
+}
+<style>
+    #nivoSlider, #BinhLuan, #GioHang,#ThongTinNhaHang {
+        display: none;
+    }
+</style>
+<div class="bg-faded p-4 my-4">
+
+    <div class="row ml-sm-0">
+        <div class="col-sm-8">
+            @Html.Action("TrangDangNhap", "GioiThieu")
+        </div>
+        <div class="border-0 col-sm-4" style="border-radius: 10px; box-shadow:0 3px 5px 0  #708090">
+            <br/>
+            <h2 class="text-center text-lg text-uppercase my-0">
+                Đăng nhập
+            </h2>
+            <hr/>
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true)
+                if (@ViewBag.Message != null)
+                {
+                    <div class="text-danger text-center">
+                        @ViewBag.Message
+                    </div>
+                }
+
+                <div class="modal-body" style="max-width: 300px">
+
+                    <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input type="email" name="Email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Nhập email của bạn">
+                    </div>
+                    <div class="form-group">
+                        <label for="MatKhau">Mật Khẩu</label>
+                        <input type="password" name="MatKhau" class="form-control" id="MatKhau" placeholder="Mật khẩu của bạn!!">
+                    </div>
+                    <div class="form-check">
+                        @*<label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" name="NhoTaiKhoan">
+                            Nhớ tài khoản
+                        </label>*@
+                        <p>
+                            <a href="@Url.Action("DangKy","TaiKhoan")">Đăng ký nếu bạn chưa có tài khoản.</a>
+                        </p>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Đăng Nhập</button>
+                </div>
+
+            }
+        </div>
+    </div>
+
+</div>
+

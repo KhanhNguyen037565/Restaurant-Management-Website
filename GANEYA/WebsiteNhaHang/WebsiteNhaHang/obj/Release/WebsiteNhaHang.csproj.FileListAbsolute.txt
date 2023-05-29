@@ -1,0 +1,256 @@
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\ApplicationInsights.config
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\csc.exe
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\vbc.exe
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\VBCSCompiler.exe
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\WebsiteNhaHang.dll.config
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\WebsiteNhaHang.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\WebsiteNhaHang.pdb
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\EntityFramework.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\EntityFramework.SqlServer.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.Web.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.ApplicationInsights.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\Newtonsoft.Json.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\PagedList.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\PagedList.Mvc.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\System.Net.Http.Formatting.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Helpers.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Http.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Http.WebHost.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Mvc.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Razor.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Webpages.Deployment.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Webpages.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Webpages.Razor.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\EntityFramework.xml
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\EntityFramework.SqlServer.xml
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.Web.xml
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.ApplicationInsights.xml
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\Newtonsoft.Json.xml
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\PagedList.xml
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\PagedList.Mvc.xml
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\System.Net.Http.Formatting.xml
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Http.xml
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Http.WebHost.xml
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Razor.xml
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Webpages.xml
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Webpages.Deployment.xml
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Webpages.Razor.xml
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Helpers.xml
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Mvc.xml
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\obj\Release\WebsiteNhaHang.csproj.AssemblyReference.cache
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\obj\Release\WebsiteNhaHang.csproj.CoreCompileInputs.cache
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\obj\Release\WebsiteNhaHang.csproj.CopyComplete
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\obj\Release\WebsiteNhaHang.dll
+C:\Users\PC\Downloads\web\WebsiteNhaHang\WebsiteNhaHang\obj\Release\WebsiteNhaHang.pdb
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\ApplicationInsights.config
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\csc.exe
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\vbc.exe
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\VBCSCompiler.exe
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\WebsiteNhaHang.dll.config
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\WebsiteNhaHang.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\WebsiteNhaHang.pdb
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\EntityFramework.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\EntityFramework.SqlServer.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.Web.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.ApplicationInsights.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Newtonsoft.Json.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\PagedList.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\PagedList.Mvc.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Net.Http.Formatting.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Helpers.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Http.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Http.WebHost.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Mvc.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Razor.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Webpages.Deployment.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Webpages.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Webpages.Razor.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\EntityFramework.xml
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\EntityFramework.SqlServer.xml
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.Web.xml
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.ApplicationInsights.xml
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Newtonsoft.Json.xml
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\PagedList.xml
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\PagedList.Mvc.xml
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Net.Http.Formatting.xml
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Http.xml
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Http.WebHost.xml
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Razor.xml
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Webpages.xml
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Webpages.Deployment.xml
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Webpages.Razor.xml
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Helpers.xml
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Mvc.xml
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\obj\Release\WebsiteNhaHang.csproj.AssemblyReference.cache
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\obj\Release\WebsiteNhaHang.csproj.CoreCompileInputs.cache
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\obj\Release\WebsiteNhaHang.csproj.CopyComplete
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\obj\Release\WebsiteNhaHang.dll
+C:\Users\PC\Downloads\web (3)\WebsiteNhaHang\WebsiteNhaHang\obj\Release\WebsiteNhaHang.pdb
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\ApplicationInsights.config
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\csc.exe
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\vbc.exe
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\VBCSCompiler.exe
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\WebsiteNhaHang.dll.config
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\WebsiteNhaHang.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\WebsiteNhaHang.pdb
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\EntityFramework.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\EntityFramework.SqlServer.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.Web.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.ApplicationInsights.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Newtonsoft.Json.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\PagedList.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\PagedList.Mvc.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Net.Http.Formatting.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Helpers.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Http.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Http.WebHost.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Mvc.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Razor.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Webpages.Deployment.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Webpages.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Webpages.Razor.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\EntityFramework.xml
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\EntityFramework.SqlServer.xml
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.Web.xml
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.ApplicationInsights.xml
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\Newtonsoft.Json.xml
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\PagedList.xml
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\PagedList.Mvc.xml
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Net.Http.Formatting.xml
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Http.xml
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Http.WebHost.xml
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Razor.xml
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Webpages.xml
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Webpages.Deployment.xml
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Webpages.Razor.xml
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Helpers.xml
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Mvc.xml
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\obj\Release\WebsiteNhaHang.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\obj\Release\WebsiteNhaHang.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\obj\Release\WebsiteNhaHang.csproj.CopyComplete
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\obj\Release\WebsiteNhaHang.dll
+C:\Users\PC\Desktop\web (3)\WebsiteNhaHang\WebsiteNhaHang\obj\Release\WebsiteNhaHang.pdb
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\ApplicationInsights.config
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\csc.exe
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\vbc.exe
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\VBCSCompiler.exe
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\WebsiteNhaHang.dll.config
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\WebsiteNhaHang.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\WebsiteNhaHang.pdb
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\EntityFramework.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\EntityFramework.SqlServer.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.Web.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.ApplicationInsights.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\Newtonsoft.Json.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\PagedList.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\PagedList.Mvc.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\System.Net.Http.Formatting.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Helpers.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Http.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Http.WebHost.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Mvc.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Razor.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Webpages.Deployment.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Webpages.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Webpages.Razor.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\EntityFramework.xml
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\EntityFramework.SqlServer.xml
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.Web.xml
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.ApplicationInsights.xml
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\Newtonsoft.Json.xml
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\PagedList.xml
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\PagedList.Mvc.xml
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\System.Net.Http.Formatting.xml
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Http.xml
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Http.WebHost.xml
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Razor.xml
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Webpages.xml
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Webpages.Deployment.xml
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Webpages.Razor.xml
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Helpers.xml
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\bin\System.Web.Mvc.xml
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\obj\Release\WebsiteNhaHang.csproj.AssemblyReference.cache
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\obj\Release\WebsiteNhaHang.csproj.CoreCompileInputs.cache
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\obj\Release\WebsiteNhaHang.csproj.CopyComplete
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\obj\Release\WebsiteNhaHang.dll
+C:\Users\PC\Downloads\Nhom02_QLNH\WebsiteNhaHang\WebsiteNhaHang\obj\Release\WebsiteNhaHang.pdb

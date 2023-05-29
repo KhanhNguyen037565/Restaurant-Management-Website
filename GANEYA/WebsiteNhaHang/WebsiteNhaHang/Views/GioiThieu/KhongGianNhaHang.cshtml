@@ -1,0 +1,38 @@
+﻿@using WebsiteNhaHang.Models
+@model List<LoaiKhongGianNhaHang>
+@{
+    ViewBag.Title = "Giới thiệu về nhà hàng";
+    Layout = "~/Views/layout/NguoiDung.cshtml";
+}
+
+<style>
+    #GioHang, #carouselExampleIndicators {
+        display: none;
+    }
+</style>
+@foreach (var item in Model)
+{
+    <div class="bg-faded p-4 my-4">
+        <hr class="divider">
+        <h2 class="text-center text-lg text-uppercase my-0">
+            @item.TenLoai
+        </h2>
+        <hr class="divider">
+        <div class="row">
+            @foreach (var khongGian in item.KhongGianNhaHang)
+            {
+                <div class="col-sm-6">
+                    <div class="card" style="width: auto">
+                        <img class="card-img-top" src="@Url.Content("~/Content/img/KhongGian/" + khongGian.HinhAnh)" style="height:30rem">
+                        @*<img class="card-img-top" src="@Url.Content("~/Content/img/"+@khongGian.HinhAnh)" style="height:30rem">*@
+                        @*"~/Content/img/KhongGian/" + item.HinhAnh*@
+                        <div class="card-body">
+                            <p class="card-text">@khongGian.GioiThieu</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+    </div>
+}
